@@ -1,0 +1,19 @@
+<%- include('../partials/header'); -%>
+
+<div class="employee-details">
+        <form action="/hubinoEmployees/<%= hubino._id %>?_method=DELETE"  method="POST" >
+            <div >
+                <h1>Employee Details </h1>
+                <h3>ID:         <%= hubino.employeeNo %></h3>
+                <h3>Name:         <%= hubino.employeeName %></h3>
+                <h3>Date of Birth:   <%= hubino.DOB %></h3>
+                <h3>Years of experience:   <%= hubino.experience %></h3>
+                <h3>Current Role:    <%= hubino.role %></h3>
+                
+            </div> 
+            <button><a href="/hubinoEmployees/<%= hubino._id %>/edit">Edit</a></button>
+            <button class="del-btn" >Delete</button>
+        </form>
+       
+
+</div>

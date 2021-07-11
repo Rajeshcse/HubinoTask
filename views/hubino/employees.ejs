@@ -1,0 +1,17 @@
+<%- include('../partials/header'); -%>
+
+<button ><a href="/hubinoEmployees/new">Add New + </a> </button>
+<ul class="recipes">
+ 
+    <% for(let emp of hubino ) { %>
+        <li class="recipe">
+          <a href="/hubinoEmployees/<%= emp._id %>">
+            <img src="/user1.jpg" alt="employee recipe icon">
+            <h4><%= emp.employeeName %></h4>
+            <p>Role:<%= emp.role %></p>
+          </a>
+        </li>
+    <% } %>
+</ul>
+
+<%- include('../partials/footer'); -%>

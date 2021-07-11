@@ -1,0 +1,32 @@
+<%- include('../partials/header'); -%>
+
+
+<div>
+    <form action="/hubinoemployees" method="post">
+        <h3 class="form-title">Add New Employee</h3>
+    
+        <div>
+            <label for="employeeNo">Employee Number</label>
+            <input  required type="number" id="employeeNo" name="hubino[employeeNo]"  >
+        </div>
+        <div>
+            <label for="employeeName">Name</label>
+            <input required type="text" id="employeeName" name="hubino[employeeName]"  >
+        </div>
+        <div>
+            <label for="DOB">Date of birth</label>
+            <input required type="date" id="DOB" name="hubino[DOB]"  >
+        </div>
+        <div>
+            <label for="experience">No. of Years Experience</label>
+            <input required type="text" id="experience" name="hubino[experience]"  >
+        </div>
+        <div>
+            <label for="role">Current Role</label>
+            <input required type="text" id="role" name="hubino[role]"  >
+        </div>
+        <button>Add Employee +</button>
+
+    </form>
+    <button >  <a href="/hubinoemployees"><- Back</a></button>
+</div>
